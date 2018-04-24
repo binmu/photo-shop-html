@@ -1,0 +1,29 @@
+.navbar-black {
+    background-color: #81b4bf;
+    border-bottom: #3c9fa9 1px solid;
+}
+
+.navbar-wrapper {
+    height: 45px;
+}
+
+.searchinpu {
+    margin-top: 3px;
+    width: 300px;
+}
+
+.avatar.size-XXXL img {
+    width: 128px;
+    height: 128px
+}
+.imgdiv{
+    height: 200px;
+    width: 180px;
+    margin-left: 30px;
+}
+.fonts{
+    font-size: 32px;
+}
+.cartemp{
+    height: 50px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录攝影网</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/user/login.css" />
+    <link rel="stylesheet" type="text/css" href="/static/plugins/layui/css/layui.css" />
+    <script type="text/javascript" src="/static/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/static/plugins/layui/layui.js"></script>
+    <script type="text/javascript" src="/static/js/user/login.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.form.min.js"></script>
+</head>
+<body>
+<div class="logindiv" >
+    <div class="lllogin">
+        <label>用户登录</label>
+    </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">用户账号</label>
+            <div class="layui-input-block">
+                <input type="text" id="usrAccount" name="usrAccount" required="" lay-verify="required" placeholder="请输入账号" autocomplete="off"
+                       class="layui-input" style="width: 230px">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">密码框</label>
+            <div class="layui-input-inline">
+                <input type="password" id="userPassword" name="userPassword" required="" lay-verify="required" placeholder="请输入密码"
+                       autocomplete="off" class="layui-input" style="width: 230px">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button type="submit" id="loginbtn" class="layui-btn layui-btn-normal btnlog">立即提交</button>
+                <button id="toregister" class="layui-btn layui-btn-warm">注册</button>
+            </div>
+        </div>
+</div>
+</body>
+</html>

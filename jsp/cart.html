@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="/static/plugins/bootstrap-4.0.0-dist/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/plugins/h-ui/css/H-ui.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/header.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/plugins/h-ui/lib/Hui-iconfont/1.0.8/iconfont.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/cart/cart.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/cart/cart2.css"/>
+
+    <script type="text/javascript" src="/static/plugins/bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/static/plugins/h-ui/js/H-ui.js"></script>
+    <script type="text/javascript" src="/static/plugins/h-ui/lib/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="/static/plugins/h-ui/lib/jquery.SuperSlide/2.1.1/jquery.SuperSlide.min.js"></script>
+    <script type="text/javascript" src="/static/js/index/index.js"></script>
+    <script type="text/javascript" src="/static/js/cart/cart.js"></script>
+
+</head>
+<body>
+<div style="width: 100%;">
+    <div style="width: 18%;float: left">
+        <div class="imgdiv">
+            <img src="/static/images/logo.jpg" class="avatar size-XXXL ">
+        </div>
+        <div class="navbar navbar-black" style="margin-left: 20px;">
+            <div class="container cl">
+                <nav class="nav navbar-nav nav-collapse" role="navigation" id="-navbar">
+                    <ul class="cl">
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">单反相机</a></li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">镜头</a></li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">三脚架</a></li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">其他</a></li>
+                    </ul>
+                </nav>
+                <nav class="navbar-userbar hidden-xs">
+
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div style="width: 80%;float: right">
+        <div>
+            <header class="navbar-wrapper">
+                <div class="navbar navbar-black">
+                    <div class="container cl">
+                        <nav class="nav navbar-nav nav-collapse" role="navigation" id="Hui-navbar">
+                            <ul class="cl">
+                                <li class="current"><a href="/">首页</a></li>
+                                <li>&nbsp;&nbsp;</li>
+                                <li><input type="text" class="form-control searchinpu" placeholder="请输入关键字..."></li>
+                                <li>&nbsp;&nbsp;</li>
+                                <li>
+                                    <button type="button" class="btn btn-default">搜索</button>
+                                </li>
+                                <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                <li><a href="#">我的购物车</a></li>
+                                <li><a href="#">个人中心</a></li>
+                                <li><a href="#">您好！请登录！</a></li>
+                                <li><a href="#">注册</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="navbar-userbar hidden-xs">
+
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <div class="cartemp"></div>
+            <div class="">
+                <div class="" style=" width: 831px;">
+                    <div class="cartThead">
+                        <div class="tCol tCheckbox">
+                            <input name="acart_list_check" id="Zall" type="checkbox" onclick="Zall(this)"> 全选
+                        </div>
+                        <div class="tCol tGoods">商品</div>
+                        <div class="tCol tPrice">单价</div>
+                        <div class="tCol tQuantity">数量</div>
+                        <div class="tCol tWeight">库存</div>
+                        <div class="tCol tSubtotal">小计</div>
+                        <div class="tCol tOperator">操作</div>
+                    </div>
+                    <div class="cartTbody">
+                        <div class="cartList youxuan" id="all_putong">
+                            <div id="danjian">
+                                <div class="cartItem">
+                                    <div class="cartPInfo" id="danjian-0-229363">
+                                        <div class="clearit">
+                                            <div class="pItem pCheckbox">
+                                                <input name="cart_list" class="putong" value="danjian-0-229363"
+                                                       type="checkbox"/>
+                                            </div>
+                                            <div class="pItem pGoods">
+                                                <div class="cart_pimg">
+                                                    <a target="_blank">
+                                                        <img src="/static/images/product/product-1.jpg"
+                                                             style="width: 60px;height: 60px;"/>
+                                                    </a>
+                                                </div>
+                                                <div class="cart_pname">
+                                                    <div>
+                                                        <a target="_blank"
+                                                           href="http://localhost:8086/item/${cart.id }.html">我是意见桑普商品，我不说话书法家地方凯萨琳的撒</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="pItem pPrice">
+                                                <div style="position: relative;">
+                                                    <strong>¥4444</strong>
+                                                </div>
+                                            </div>
+                                            <div class="pItem pQuantity">
+                                                <div class="cartAmount">
+                                                    <a href="javascript:void(0);" class="cartCountBtn decrement">-</a>
+                                                    <input type="text" value="4" class="amount itemnum"
+                                                           itemPrice="11" itemId="1212"
+                                                           id="amountdanjian-0-229363" name="amount">
+                                                    <a href="javascript:void(0);" class="cartCountBtn increment">+</a>
+                                                </div>
+                                            </div>
+                                            <div class="pItem pInventory">1</div>
+                                            <div class="pItem pSubtotal">
+                                                <span id="total_price" class="totalprice">¥44</span>
+                                            </div>
+                                            <div class="pItem pOperator">
+                                                <a id="cartDel" href="/cart/delete/${cart.id}.html">删除</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cartItem">
+                                        <div class="cartPInfo" id="-0-229363">
+                                            <div class="clearit">
+                                                <div class="pItem pCheckbox">
+                                                    <input name="cart_list" class="putong" value="danjian-0-229363"
+                                                           type="checkbox"/>
+                                                </div>
+                                                <div class="pItem pGoods">
+                                                    <div class="cart_pimg">
+                                                        <a target="_blank">
+                                                            <img src="/static/images/product/product-1.jpg"
+                                                                 style="width: 60px;height: 60px;"/>
+                                                        </a>
+                                                    </div>
+                                                    <div class="cart_pname">
+                                                        <div>
+                                                            <a target="_blank"
+                                                               href="http://localhost:8086/item/${cart.id }.html">我是意见桑普商品，我不说话书法家地方凯萨琳的撒</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="pItem pPrice">
+                                                    <div style="position: relative;">
+                                                        <strong>¥4444</strong>
+                                                    </div>
+                                                </div>
+                                                <div class="pItem pQuantity">
+                                                    <div class="cartAmount">
+                                                        <a href="javascript:void(0);"
+                                                           class="cartCountBtn decrement">-</a>
+                                                        <input type="text" value="4" class="amount itemnum"
+                                                               itemPrice="11" itemId="1212"
+                                                               id="-0-22363" name="amount">
+                                                        <a href="javascript:void(0);"
+                                                           class="cartCountBtn increment">+</a>
+                                                    </div>
+                                                </div>
+                                                <div class="pItem pInventory">1</div>
+                                                <div class="pItem pSubtotal">
+                                                    <span id="tota_price" class="totalprice">¥44</span>
+                                                </div>
+                                                <div class="pItem pOperator">
+                                                    <a id="cartel" href="/cart/delete/${cart.id}.html">删除</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cartOrderCount" id="orderCount">
+                            <div class="cartButtons">
+                                <input type="button" value="删除选中的商品" class="cartclear">
+                                <input type="button" value="清空购物车" class="cartclear">
+                            </div>
+                            <div class="cartTotalItem">
+                                <span id="all_shopePrice"></span>&nbsp;&nbsp;&nbsp;&nbsp;商品总计：
+                                <span class="cartPrice" id="allMoney2">¥8888</span>
+                            </div>
+                        </div>
+                        <div class="cartJsuan">
+                            <input class="btn btn-danger size-L radius" type="button" value="结算">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

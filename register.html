@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册-个人用户</title>
+    <link rel="stylesheet" type="text/css" href="/static/plugins/layui/css/layui.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/user/register.css"/>
+    <script type="text/javascript" src="/static/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/static/js/user/register.js"></script>
+    <script type="text/javascript" src="/static/plugins/layui/layui.js"></script>
+    <script type="text/javascript" src="/static/plugins/layui/layui.all.js"></script>
+</head>
+<body>
+<div class="regdiv">
+    <div class="emptiti">
+    </div>
+    <form id="regForm_mod" name="regForm_mod">
+        <div class="layui-form-item">
+            <label class="layui-form-label">用户账号：</label>
+            <div class="layui-input-block">
+                <input type="text" id="userAccount" name="userAccount"
+                       placeholder="请输入账号" autocomplete="on" class="layui-input" style="width: 230px"/>
+            </div>
+            <div id="accErr" class="regerr"></div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">密码：</label>
+            <div class="layui-input-block">
+                <input type="password" id="userPassword" name="userPassword" lay-verify="pass" placeholder="请输入密码"
+                       autocomplete="off" class="layui-input" style="width: 230px"/>
+            </div>
+            <div id="pwdErr" class="regerr"></div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">确认密码：</label>
+            <div class="layui-input-block">
+                <input type="password" id="againpwd" name="againpwd" placeholder="请再次输入密码" autocomplete="off"
+                       class="layui-input" style="width: 230px"/>
+            </div>
+            <div id="agaPwdErr" class="regerr"></div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">手机号码：</label>
+            <div class="layui-input-block">
+                <input type="text" id="userPhone" name="userPhone" lay-verify="required|phone|number"
+                       placeholder="请输入手机号码" autocomplete="on" class="layui-input" style="width: 230px"/>
+            </div>
+            <div id="phoneErr" class="regerr"></div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">邮箱地址：</label>
+            <div class="layui-input-block">
+                <input type="text" id="userEmail" name="userEmail" lay-verify="email" placeholder="请输入邮箱地址"
+                       autocomplete="on" class="layui-input" style="width: 230px"/>
+            </div>
+            <div id="emailErr" class="regerr"></div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block" style="float: left;">
+                <button id="regbtn" class="layui-btn layui-btn-normal" lay-submit lay-filter="*">立即提交</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            </div>
+            <div class="login">
+                <span>已有账号，立即 </span><a href="/user/showlogin">登录</a>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

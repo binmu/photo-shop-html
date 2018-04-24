@@ -1,0 +1,57 @@
+.lunbotu{
+    width: 100%;
+}
+.lunbow{
+    width: 800px;
+}
+
+
+
+.temp {
+    height: 50px;
+    background-color: #81b4bf;
+    width: 800px;
+}
+
+.item-img{
+    width: 180px;
+}
+.aitem{
+    bottom: -15px;
+    width: 200px;
+    float: left;
+    display: block;
+    border-bottom: 15px solid #f5f5f5;
+    position: relative;
+    background-color: #fff;
+    text-align: center;
+}
+.itemm{
+    border: 1px solid #81b4bf;
+}
+.itemh{
+    visibility: hidden;
+    width: 68px;
+    height: 20px;
+    color: #fff;
+    line-height: 20px;
+    font-size: 14px;
+    margin: 0 auto;
+    text-align: center;
+}
+.item-title{
+    width: 140px;
+    height: 40px;
+    font-size: 14px;
+    color: #333;
+    overflow: hidden;
+    margin: 8px auto;
+    text-align: center;
+}
+.item-price{
+    font-size: 18px;
+    color: #FF0036;
+    line-height: 18px;
+    margin: 10px auto;
+    text-align: center;
+}

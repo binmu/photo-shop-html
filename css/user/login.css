@@ -1,0 +1,28 @@
+.logindiv {
+    text-align: center; /*让div内部文字居中*/
+    background-color: #d7e0e4b0;
+    border-radius: 20px;
+    width: 400px;
+    height: 260px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.lllogin{
+    margin: 20px;
+}
+.btnlog{
+    width: 150px;
+    margin-left: -59px;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background: url("/static/images/loginbakimg/loginbac1.jpg");
+}
+

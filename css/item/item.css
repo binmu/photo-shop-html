@@ -1,0 +1,64 @@
+.item-xx {
+    width: 1000px;
+}
+
+.item-img-xx {
+    float: left;
+}
+
+.item-jieshao {
+    float: left;
+    margin-left: 40px;
+    width: 420px;
+    line-height: 26px;
+}
+
+.priceandcu {
+    background-color: #f532138a;
+}
+
+.paddleft {
+    padding-left: 10px;
+}
+
+.it-num {
+    width: 200px;
+    float: left;
+}
+
+.btn-add-del {
+    width: 14px;
+    text-align: center;
+}
+
+.itemnum {
+    width: 40px;
+    border: 1px solid #a7a6ac;
+}
+
+.wwidth {
+    width: 860px;
+}
+
+.peizhi {
+    border: 1px solid #81b4bf;
+    margin-bottom: 10px;
+}
+
+.tabBar {
+    border-bottom: 2px solid #81b4bf;
+}
+
+.tabBar span.current {
+    background-color: #81b4bf;
+    color: #fff;
+}
+
+.hhh {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.peizhiitem>label {
+    width: 200px;
+}

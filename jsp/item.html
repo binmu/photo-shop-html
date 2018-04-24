@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详细页面</title>
+    <link rel="stylesheet" type="text/css" href="/static/plugins/bootstrap-4.0.0-dist/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/plugins/h-ui/css/H-ui.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/plugins/h-ui/lib/Hui-iconfont/1.0.8/iconfont.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/header.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/index/index.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/item/item.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/common.css"/>
+    <script type="text/javascript" src="/static/plugins/bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/static/plugins/h-ui/js/H-ui.js"></script>
+    <script type="text/javascript" src="/static/plugins/layer/layer.js"></script>
+    <script type="text/javascript" src="/static/plugins/h-ui/lib/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="/static/plugins/h-ui/lib/jquery.SuperSlide/2.1.1/jquery.SuperSlide.min.js"></script>
+    <script type="text/javascript" src="/static/js/item/item.js"></script>
+
+
+</head>
+<body>
+<div style="width: 100%;">
+    <div style="width: 18%;float: left">
+        <div class="imgdiv">
+            <img src="/static/images/logo.jpg" class="avatar size-XXXL ">
+        </div>
+        <div class="navbar navbar-black" style="margin-left: 20px;">
+            <div class="container cl">
+                <nav class="nav navbar-nav nav-collapse" role="navigation" id="-navbar">
+                    <ul class="cl">
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">单反相机</a></li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">镜头</a></li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">三脚架</a></li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">其他</a></li>
+                    </ul>
+                </nav>
+                <nav class="navbar-userbar hidden-xs">
+
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div style="width: 80%;float: right">
+        <div>
+            <header class="navbar-wrapper">
+                <div class="navbar navbar-black">
+                    <div class="container cl">
+                        <nav class="nav navbar-nav nav-collapse" role="navigation" id="Hui-navbar">
+                            <ul class="cl">
+                                <li class="current"><a href="/">首页</a></li>
+                                <li>&nbsp;&nbsp;</li>
+                                <li><input type="text" class="form-control searchinpu" placeholder="请输入关键字..."></li>
+                                <li>&nbsp;&nbsp;</li>
+                                <li>
+                                    <button type="button" class="btn btn-default">搜索</button>
+                                </li>
+                                <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                <li><a href="#">我的购物车</a></li>
+                                <li><a href="#">个人中心</a></li>
+                                <li><a href="#">您好！请登录！</a></li>
+                                <li><a href="#">注册</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="navbar-userbar hidden-xs"></nav>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div style="height: 50px;clear: both;"></div>
+        <div class="item-xx">
+            <div class="item-head">
+                <div class="item-img-xx"><img src="/static/images/product/product-1.jpg" style="width: 400px"></div>
+                <div class="item-jieshao">
+                    <div class="it-title paddleft">
+                        <span>尼康（Nikon） D3400 入门单反相机（AF-P DX 尼克尔 18-55mm f/3.5-5.6G VR防抖镜头 ）</span>
+                    </div>
+                    <div class="priceandcu paddleft">
+                        <div class="it-price"><label>价格：</label><span>￥23243</span></div>
+                        <div class="item-cuxiao"><label>促销：</label><span>待促销</span></div>
+                    </div>
+                    <div class="it-guige paddleft">
+                        <label>规格型号：</label>
+                        <span>18-55mm f/3.5-5.6G</span>
+                    </div>
+                    <div class="it-weight paddleft"><label>重量：</label><span>1.5kg</span></div>
+                    <div class="num-kucun paddleft">
+                        <div class="it-num">
+                            <label>数量：</label>
+                                <button type="button" id="numdel" class="btn-add-del">-</button>
+                                <input type="text" class="itemnum" id="itemNum" value="1" maxlength="6">
+                                <button type="button" id="numadd" class="btn-add-del">+</button>
+                                <span>件</span>
+                        </div>
+                        <div class="it-kucun"><label>库存：</label><span id="stockQuantity">1000</span></div>
+                    </div>
+                    <div class="item-to-cart">
+                        <input class="btn btn-danger size-L radius" type="button" value="加入购物车">
+                    </div>
+                </div>
+            </div>
+            <div style="height: 30px;clear: both;"></div>
+            <div class="item-foot wwidth">
+                <div id="tab_demo" class="HuiTab">
+                    <div class="tabBar clearfix"><span>商品详情</span><span>评论列表</span></div>
+                    <div class="tabCon">
+                            <div class="peizhi">
+                                <div class="hhh">
+                                    <div class="peizhiitem"><label>品牌名称：</label><span>Canon/佳能</span></div>
+                                    <div class="peizhiitem"><label>产品名称：</label><span>Canon/佳能 EOS 800D套机(18-55mm)</span></div>
+                                    <div class="peizhiitem"><label>是否支持机身除尘:</label><span>支持</span></div>
+                                    <div class="peizhiitem"><label>是否支持机身马达:</label><span>不支持</span></div>
+                                    <div class="peizhiitem"><label>传感器尺寸:</label><span>22.3mmx14.9mm</span></div>
+                                    <div class="peizhiitem"><label>组合形式:</label><span>单镜头套装</span></div>
+                                    <div class="peizhiitem"><label>颜色分类:</label><span>黑色</span></div>
+                                </div>
+                            </div>
+                        <div class="tupian">
+                            <img class="wwidth" src="/static/images/product/product-1.jpg">
+                            <img class="wwidth" src="/static/images/product/product-1.jpg">
+
+                        </div>
+                    </div>
+                    <div class="tabCon">
+                        <ul class="commentList">
+                            <li class="item cl"> <a href="#"><i class="avatar size-L radius"><img alt="" src="/static-h-ui-net/h-ui/images/ucnter/avatar-default.jpg"></i></a>
+                                <div class="comment-main">
+                                    <header class="comment-header">
+                                        <div class="comment-meta"><a class="comment-author" href="#">辉哥</a> 评论于
+                                            <time title="2014年8月31日 下午3:20" datetime="2014-08-31T03:54:20">2014-8-31 15:20</time>
+                                        </div>
+                                    </header>
+                                    <div class="comment-body">
+                                        <p>你是猴子派来的救兵吗？</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="commentList">
+                            <li class="item cl"> <a href="#"><i class="avatar size-L radius"><img alt="" src="/static-h-ui-net/h-ui/images/ucnter/avatar-default.jpg"></i></a>
+                                <div class="comment-main">
+                                    <header class="comment-header">
+                                        <div class="comment-meta"><a class="comment-author" href="#">辉哥</a> 评论于
+                                            <time title="2014年8月31日 下午3:20" datetime="2014-08-31T03:54:20">2014-8-31 15:20</time>
+                                        </div>
+                                    </header>
+                                    <div class="comment-body">
+                                        <p>你是猴子派来的救兵吗？</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+<footer class="footer mt-20">
+    <div class="container-fluid">
+        <nav> <a href="#" target="_blank">关于我们</a> <span class="pipe">|</span> <a href="#" target="_blank">联系我们</a> <span class="pipe">|</span> <a href="#" target="_blank">法律声明</a> </nav>
+        <p>Copyright &copy;2018 Moon All Rights Reserved. <br>
+            <a href="http://www.miitbeian.gov.cn/" target="_blank" rel="nofollow">京ICP备1000000号</a><br>
+        </p>
+    </div>
+</footer>
+</body>
+</html>
