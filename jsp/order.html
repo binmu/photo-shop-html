@@ -6,17 +6,99 @@
     <link rel="stylesheet" type="text/css" href="/static/plugins/bootstrap-4.0.0-dist/css/bootstrap.css"/>
     <link rel="stylesheet" type="text/css" href="/static/plugins/h-ui/css/H-ui.css"/>
     <link rel="stylesheet" type="text/css" href="/static/css/header.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/order.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/common.css"/>
+
     <link rel="stylesheet" type="text/css" href="/static/plugins/h-ui/lib/Hui-iconfont/1.0.8/iconfont.min.css"/>
     <script type="text/javascript" src="/static/plugins/bootstrap-4.0.0-dist/js/bootstrap.js"></script>
     <script type="text/javascript" src="/static/plugins/h-ui/js/H-ui.js"></script>
     <script type="text/javascript" src="/static/plugins/h-ui/lib/jquery/1.9.1/jquery.min.js"></script>
 </head>
 <body>
-<div class="four steps">
-    <span class="step">第一步</span>
-    <span class="active step">第二步</span>
-    <span class="disabled step">第三步</span>
+<div class="three steps san">
+    <span class="active step">确认订单</span>
+    <span class="disabled step">支付订单</span>
+    <span class="disabled step">支付成功</span>
 </div>
-
+<div style="height: 30px;"></div>
+<div class="orderxx">
+    <div class="parleft">
+        <h3>收货人信息</h3>
+        <div class="in-p parleft">
+            <label>收货人：</label>
+            <input type="text" maxlength="10" class="recpersonname ptu-w input-text radius size-M" id="recPersonName"
+                   name="recPersonName"/>
+        </div>
+        <div class="in-p parleft">
+            <label>联系方式：</label>
+            <input type="text" maxlength="11" class="phoneclass ptu-w input-text radius size-M" id="recPhone"
+                   name="recPhone"/>
+        </div>
+        <div class="in-p  parleft">
+            <label>收货地址：</label>
+            <select id="recAdrss" name="recAdrss" class="recadrr ptu-w input-text radius size-M">
+                <option value="1">默认地址已</option>
+            </select>
+        </div>
+    </div>
+    <div class="parleft">
+        <h3>商品信息</h3>
+        <div class="parleft">
+            <div class="prohead">
+                <div class="t-p"><span>商品</span></div>
+                <div class="t-g"><span>规格型号</span></div>
+                <div class="t-d"><span>单价</span></div>
+                <div class="t-s"><span>数量</span></div>
+                <div class="t-x"><span>小计</span></div>
+            </div>
+            <div class="proitem">
+                <div class="t-prod t-p">
+                    <div style="float: left">
+                        <img src="/static/images/product/product-1.jpg" style="width: 60px;height: 60px;padding: 4px;"/>
+                    </div>
+                    <div class="overf partop"><span>我是意见桑普商品，我不说话书法家地方凯萨琳的撒</span></div>
+                </div>
+                <div class="partop t-g overf"><span>18-55mm f/3.5-5.6G</span></div>
+                <div class="partop t-d"><span>￥233</span></div>
+                <div class="partop t-s"><span>1</span></div>
+                <div class="partop t-x"><span>￥233</span></div>
+            </div>
+            <div class="proitem">
+                <div class="t-prod t-p">
+                    <div style="float: left">
+                        <img src="/static/images/product/product-1.jpg" style="width: 60px;height: 60px;padding: 4px;"/>
+                    </div>
+                    <div class="overf partop"><span>我是意见桑普商品，我不说话书法家地方凯萨琳的撒</span></div>
+                </div>
+                <div class="partop t-g overf"><span>18-55mm f/3.5-5.6G</span></div>
+                <div class="partop t-d"><span>￥233</span></div>
+                <div class="partop t-s"><span>1</span></div>
+                <div class="partop t-x"><span>￥233</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="clear" style="height: 40px"></div>
+    <div class="orderbtn-div">
+        <div class="zongjia"><label>金额：</label><span>￥123</span></div>
+        <div class="clear" style="height: 20px"></div>
+        <div class="btttt">
+            <div class="leftbtn">
+                <input class="btn btn-primary size-L radius" type="button" value="返回购物车">
+            </div>
+            <div class="rightbtn">
+                <input class="btn btn-danger size-L radius" type="button" value="确认订单">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clear" style="height: 40px"></div>
+<footer class="footer mt-20">
+    <div class="container-fluid">
+        <nav> <a href="#" target="_blank">关于我们</a> <span class="pipe">|</span> <a href="#" target="_blank">联系我们</a> <span class="pipe">|</span> <a href="#" target="_blank">法律声明</a> </nav>
+        <p>Copyright &copy;2018 Moon All Rights Reserved. <br>
+            <a href="http://www.miitbeian.gov.cn/" target="_blank" rel="nofollow">京ICP备1000000号</a><br>
+        </p>
+    </div>
+</footer>
 </body>
 </html>

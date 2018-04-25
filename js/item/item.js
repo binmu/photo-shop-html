@@ -46,4 +46,9 @@ $(function () {
         $("#itemNum").val(itemNum);
     });
 
+    //加入购物车
+    $("#addCart").click(function () {
+        window.location.href="cart/showcart";
+    });
+
 });

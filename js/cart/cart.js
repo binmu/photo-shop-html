@@ -41,3 +41,10 @@ var CART = {
 $(function(){
     CART.itemNumChange();
 });
+
+
+$(function(){
+    $("#clearing").click(function() {
+        windows.location.href("order/showorder");
+    })
+});

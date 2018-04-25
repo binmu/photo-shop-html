@@ -1,0 +1,85 @@
+.san {
+    width: 900px;
+    margin-left: 200px;
+}
+
+.parleft {
+    padding-left: 20px;
+}
+
+.partop {
+    padding-top: 10px;
+}
+
+.orderxx {
+    width: 900px;
+    margin-left: 200px;
+}
+
+.in-p > label {
+    width: 100px;
+}
+
+.ptu-w {
+    width: 400px;
+}
+
+.prohead {
+    height: 40px;
+    text-align: center;
+    background-color: #81b4bf;
+    padding-top: 10px;
+}
+
+.t-p {
+    width: 300px;
+    float: left;
+}
+
+.t-g {
+    width: 200px;
+    float: left;
+}
+
+.t-d {
+    width: 150px;
+    float: left;
+}
+
+.t-s {
+    width: 100px;
+    float: left;
+}
+
+.t-x {
+    width: 100px;
+    float: left;
+}
+
+.proitem {
+    height: 60px;
+    text-align: center;
+    background-color: #81b4bf5e;
+}
+
+.overf {
+    overflow: hidden;
+}
+
+.zongjia{
+    float: right;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.zongjia>span{
+    color: red;
+}
+.leftbtn{
+    float: left;
+    margin-left: 40px;
+}
+.rightbtn{
+    float: right;
+    margin-right: 10px;
+}
